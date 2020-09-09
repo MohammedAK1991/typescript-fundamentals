@@ -11,12 +11,12 @@ function timeout(n: number) {
  * @param a first number
  * @param b second
  */
-export async function addNumbers(a: number, b: number) {
+export async function addNumbers(a: number, b: number, c: number) {
   await timeout(500);
-  return a + b;
+  return a + b + c ;
 }
 
 //== Run the program ==//
 (async () => {
-  console.log(await addNumbers(3, 4));
+  console.log(await addNumbers(3, 4, 7));
 })();
